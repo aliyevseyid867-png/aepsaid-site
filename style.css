@@ -81,3 +81,44 @@
   position: relative;
   z-index: 1;
 }
+
+/* Put the image behind the hero title */
+.hero {
+  position: relative;
+  isolation: isolate;
+}
+
+.hero-background {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.hero-background img {
+  position: absolute;
+  width: 75%;
+  height: 100%;
+  left: 10%;
+  top: 0;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0.32;
+  -webkit-mask-image: radial-gradient(
+    ellipse at center,
+    #000 25%,
+    transparent 75%
+  );
+  mask-image: radial-gradient(
+    ellipse at center,
+    #000 25%,
+    transparent 75%
+  );
+}
+
+/* Keep the title above the image */
+.hero-copy {
+  position: relative;
+  z-index: 2;
+}
