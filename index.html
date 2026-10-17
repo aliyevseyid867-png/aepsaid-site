@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#090807" />
+  <meta name="description" content="aepsa1d — After Effects editor, cinematic edits and color corrections." />
+  <title>aepsa1d — After Effects editor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="wordmark" href="#top">aepsa1d<span>®</span></a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="#diary">Diary</a><a href="#works">Works</a><a href="#cc">CC</a><a href="#other-side">Other side</a><a href="#order">Order</a>
+    </nav>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+    <a class="nav-cta" href="#order">Let’s talk <span>↗</span></a>
+  </header>
+  <nav class="mobile-nav" id="mobileNav"><a href="#diary">Diary</a><a href="#works">Works</a><a href="#cc">CC</a><a href="#other-side">Other side</a><a href="#order">Order</a></nav>
+
+  <main id="top">
+    <section class="hero section-wrap">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="status-dot"></span> INDEPENDENT VIDEO EDITOR <span class="eyebrow-year">— 2026</span></p>
+        <h1>EVERY FRAME<br><em>HAS A FEELING.</em></h1>
+        <p class="hero-desc">After Effects edits, cinematic visuals and color that hits different. Made with care, one frame at a time.</p>
+        <div class="hero-actions"><a class="button button-light" href="#works">Explore my work <span>↘</span></a><a class="text-link" href="https://www.tiktok.com/@aepsa1d" target="_blank" rel="noreferrer">TikTok ↗</a></div>
+        <div class="hero-meta"><span>AE EDITOR · MULTI-FANDOM</span><span>AZERBAIJAN / ONLINE</span></div>
+      </div>
+      <div class="hero-art reveal" aria-label="Decorative cinematic artwork">
+        <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+        <div class="art-glow"></div><div class="art-number">01 <span>/ 06</span></div>
+        <div class="art-caption"><span>VISUAL STUDY</span><b>LIGHT / MOTION / MOOD</b></div>
+        <div class="art-cross">✳</div>
+      </div>
+      <div class="scroll-note"><span class="scroll-line"></span> SCROLL TO EXPLORE</div>
+    </section>
+
+    <section class="intro section-wrap" id="diary">
+      <div class="section-index">S01 / THE DIARY</div>
+      <div class="intro-content reveal"><p class="eyebrow">A LITTLE ABOUT THIS SPACE</p><h2>Dear internet,</h2><p class="intro-text">This is where my favorite characters, sounds and random edit ideas come together. Mostly made in After Effects, always made for the feeling.</p><p class="signature">— aepsa1d <span>✳</span></p></div>
+      <div class="intro-side"><span class="side-star">✳</span><p>NOT JUST CLIPS.<br> LITTLE WORLDS.</p></div>
+    </section>
+
+    <section class="works section-wrap" id="works">
+      <div class="section-head"><div><p class="eyebrow">S02 / SELECTED WORKS</p><h2>Some things I made<span class="accent">.</span></h2></div><a class="text-link" href="https://www.tiktok.com/@aepsa1d" target="_blank" rel="noreferrer">All edits on TikTok ↗</a></div>
+      <p class="section-note">A few favorites from my edit folder. Replace these sample cards with your own videos.</p>
+      <div class="work-grid">
+        <a class="work-card work-tall reveal" href="https://www.tiktok.com/@aepsa1d" target="_blank" rel="noreferrer"><div class="work-image image-one"><span class="image-stamp">01 / CHARACTER EDIT</span><span class="play">↗</span></div><div class="work-info"><div><h3>Character study</h3><p>Color · Rhythm · Story</p></div><span class="work-year">2026</span></div></a>
+        <a class="work-card reveal" href="https://www.tiktok.com/@aepsa1d" target="_blank" rel="noreferrer"><div class="work-image image-two"><span class="image-stamp">02 / MULTI-FANDOM</span><span class="play">↗</span></div><div class="work-info"><div><h3>After hours</h3><p>Velocity · Atmosphere</p></div><span class="work-year">2026</span></div></a>
+        <a class="work-card reveal" href="https://www.tiktok.com/@aepsa1d" target="_blank" rel="noreferrer"><div class="work-image image-three"><span class="image-stamp">03 / FULL SCREEN</span><span class="play">↗</span></div><div class="work-info"><div><h3>Full screen edit</h3><p>Composition · Motion</p></div><span class="work-year">2026</span></div></a>
+      </div>
+    </section>
+
+    <section class="cc-section section-wrap" id="cc">
+      <div class="section-head"><div><p class="eyebrow">S03 / COLOR COLLECTION</p><h2>Color changes <em>everything.</em></h2></div><p class="head-aside">CC PRESETS<br>MADE IN AFTER EFFECTS</p></div>
+      <div class="cc-panel reveal">
+        <div class="cc-preview" id="ccPreview"><div class="preview-before"></div><div class="preview-after" id="previewAfter"></div><div class="preview-label label-before">BEFORE</div><div class="preview-label label-after">AFTER</div><div class="compare-line" id="compareLine"><span>↔</span></div><input type="range" min="8" max="92" value="53" id="compareRange" aria-label="Compare before and after color correction"></div>
+        <div class="cc-details"><div><p class="eyebrow">COLOR PRESET / 001</p><h3 id="ccName">Midnight Bloom</h3><p class="cc-description">A moody, contrasty look for edits that need a little more atmosphere. Preview artwork is a placeholder.</p></div><div class="cc-bottom"><div><span class="price">$—</span><span class="price-note">PRICE TO BE ADDED</span></div><button class="button button-outline" id="ccButton">Coming soon <span>↗</span></button></div><div class="cc-selector"><button class="swatch active" data-name="Midnight Bloom" data-filter="hue-rotate(0deg) saturate(1.2) contrast(1.12)">01 <i></i></button><button class="swatch" data-name="Cold Blue" data-filter="hue-rotate(22deg) saturate(1.3) contrast(1.08)">02 <i></i></button><button class="swatch" data-name="Burgundy" data-filter="hue-rotate(-24deg) saturate(1.25) contrast(1.15)">03 <i></i></button><button class="swatch" data-name="Soft Gold" data-filter="sepia(.28) saturate(1.18) contrast(1.04)">04 <i></i></button></div></div>
+      </div>
+    </section>
+
+    <section class="other-side section-wrap" id="other-side"><div class="section-index">S04 / THE OTHER SIDE</div><div class="candle-scene reveal" id="candleScene"><div class="wall-texture"></div><div class="candle-glow" id="candleGlow"></div><div class="secret-text"><p class="eyebrow">SOME THINGS LOOK BETTER IN THE DARK</p><h2>Move your cursor.<br><em>Find the details.</em></h2><p>A small interactive moment inspired by dark, cinematic worlds.</p></div><div class="candle-tip">MOVE TO EXPLORE <span>✳</span></div></div></section>
+
+    <section class="order section-wrap" id="order">
+      <div class="section-head"><div><p class="eyebrow">S05 / YOUR TURN</p><h2>Have an idea<span class="accent">?</span></h2></div><p class="head-aside">LET’S MAKE<br>SOMETHING COOL.</p></div>
+      <div class="order-layout"><div class="order-copy"><p>Want a project, a custom edit, or a color correction? Send the details and we can talk about it.</p><div class="order-steps"><div><span>01</span><p><b>Tell me the idea</b><small>Character, sound, mood, references.</small></p></div><div><span>02</span><p><b>We work out the details</b><small>Price and delivery time confirmed first.</small></p></div><div><span>03</span><p><b>Make it happen</b><small>Final files and any agreed revisions.</small></p></div></div><a class="text-link" href="https://www.tiktok.com/@aepsa1d" target="_blank" rel="noreferrer">Message me on TikTok ↗</a></div>
+        <form class="order-form" id="orderForm"><div class="form-top"><span>PROJECT INQUIRY</span><span>FORM / 001</span></div><label>Your name or username<input name="name" required placeholder="@yourusername"></label><label>What are you looking for?<select name="type"><option>Custom edit</option><option>AE project file</option><option>Color correction</option><option>Something else</option></select></label><label>Tell me a little about it<textarea name="details" required rows="4" placeholder="Character, song, references, budget..."></textarea></label><label>Where can I contact you?<input name="contact" required placeholder="TikTok / Telegram / email"></label><button class="button button-light submit-button" type="submit">Prepare inquiry <span>↗</span></button><p class="form-hint">This demo opens a prepared message for you to copy. It does not send data to a server.</p></form>
+      </div>
+    </section>
+
+    <section class="faq section-wrap"><div><p class="eyebrow">S06 / QUICK QUESTIONS</p><h2>Before you ask<span class="accent">.</span></h2></div><div class="faq-list"><details><summary>Can I request an edit? <span>+</span></summary><p>Yes. Use the inquiry form above and include the character, song and references if you have them.</p></details><details><summary>Do you sell project files or CCs? <span>+</span></summary><p>This template is ready for a shop section, but the real products, prices and payment links still need to be added.</p></details><details><summary>How do I get the files? <span>+</span></summary><p>Delivery details can be agreed after you confirm the order and payment method directly.</p></details><details><summary>Can I contact you first? <span>+</span></summary><p>Of course. Use the TikTok link in the navigation or update it with your preferred contact link.</p></details></div></section>
+  </main>
+  <footer class="footer section-wrap"><a class="wordmark" href="#top">aepsa1d<span>®</span></a><p>MADE FRAME BY FRAME <span>✳</span> 2026</p><a href="#top" class="back-top">BACK TO TOP ↑</a></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
