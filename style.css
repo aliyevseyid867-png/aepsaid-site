@@ -45,80 +45,51 @@
   }
 }
 
-.hero-background {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-  pointer-events: none;
-  overflow: hidden;
-}
-
-.hero-background img {
-  position: absolute;
-  width: min(60vw, 850px);
-  height: 100%;
-  left: 25%;
-  top: 0;
-  object-fit: cover;
-  object-position: center;
-  opacity: 0.45;
-  -webkit-mask-image: radial-gradient(
-    ellipse at center,
-    #000 20%,
-    transparent 75%
-  );
-  mask-image: radial-gradient(
-    ellipse at center,
-    #000 20%,
-    transparent 75%
-  );
-}
-
-.hero-copy,
-.hero-art,
-.art-orbit,
-.art-glow {
-  position: relative;
-  z-index: 1;
-}
-
-/* Put the image behind the hero title */
+/* Full-screen cinematic background */
 .hero {
   position: relative;
   isolation: isolate;
+  overflow: hidden;
 }
 
 .hero-background {
   position: absolute;
   inset: 0;
   z-index: -1;
-  pointer-events: none;
   overflow: hidden;
+  pointer-events: none;
 }
 
 .hero-background img {
   position: absolute;
-  width: 75%;
+  inset: 0;
+  width: 100%;
   height: 100%;
-  left: 10%;
-  top: 0;
   object-fit: cover;
   object-position: center;
-  opacity: 0.32;
-  -webkit-mask-image: radial-gradient(
-    ellipse at center,
-    #000 25%,
-    transparent 75%
-  );
-  mask-image: radial-gradient(
-    ellipse at center,
-    #000 25%,
-    transparent 75%
+  opacity: 0.48;
+  filter: brightness(0.55) contrast(1.08);
+}
+
+/* Dark overlay over the image */
+.hero-background::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(9, 8, 7, 0.8),
+    rgba(9, 8, 7, 0.35),
+    rgba(9, 8, 7, 0.75)
   );
 }
 
-/* Keep the title above the image */
-.hero-copy {
+/* Keep the text and artwork above the background */
+.hero-copy,
+.hero-art,
+.art-orbit,
+.art-glow,
+.scroll-note {
   position: relative;
-  z-index: 2;
+  z-index: 1;
 }
