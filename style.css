@@ -36,10 +36,6 @@
   );
 }
 
-/* Remove the old orange glow */
-.hero .art-glow {
-  display: none;
-}
 
 @media (max-width: 760px) {
   .hero-background img {
@@ -47,4 +43,41 @@
     left: 0;
     opacity: 0.3;
   }
+}
+
+.hero-background {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.hero-background img {
+  position: absolute;
+  width: min(60vw, 850px);
+  height: 100%;
+  left: 25%;
+  top: 0;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0.45;
+  -webkit-mask-image: radial-gradient(
+    ellipse at center,
+    #000 20%,
+    transparent 75%
+  );
+  mask-image: radial-gradient(
+    ellipse at center,
+    #000 20%,
+    transparent 75%
+  );
+}
+
+.hero-copy,
+.hero-art,
+.art-orbit,
+.art-glow {
+  position: relative;
+  z-index: 1;
 }
