@@ -174,3 +174,20 @@ footer p { text-align:center; }
   background-position: center;
   background-repeat: no-repeat;
 }
+.hero {
+  position: relative;
+  isolation: isolate;
+  background-image:
+    radial-gradient(
+      ellipse at center,
+      transparent 35%,
+      rgba(25, 11, 14, 0.15) 48%,
+      rgba(25, 11, 14, 0.65) 72%,
+      #190b0e 100%
+    ),
+    url("/background.jpg");
+
+  background-size: 100% 100%, cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
