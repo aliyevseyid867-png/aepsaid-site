@@ -10,11 +10,11 @@ document.querySelectorAll(".faq details").forEach((item) => {
     }
   });
 });
-const progressFill = document.querySelector(".episode-progress-fill");
-function updateEpisodeProgress() { if (!progressFill) return;
-const scrollableHeight = document.documentElement.scrollHeight - window.innerHeight;
-const progress = scrollableHeight > 0 ? (window.scrollY / scrollableHeight) * 100 : 0;
-progressFill.style.width = ${Math.min(100, Math.max(0, progress))}%; }
-window.addEventListener("scroll", updateEpisodeProgress, { passive: true });
-window.addEventListener("resize", updateEpisodeProgress);
-updateEpisodeProgress();
+const progressLine = document.querySelector(".progress-line > span");
+function updateProgressLine() { if (!progressLine) return;
+const pageHeight = document.documentElement.scrollHeight - window.innerHeight;
+const progress = pageHeight > 0 ? (window.scrollY / pageHeight) * 100 : 0;
+progressLine.style.width = ${progress}%; }
+window.addEventListener("scroll", updateProgressLine, { passive: true });
+window.addEventListener("resize", updateProgressLine);
+updateProgressLine();

@@ -207,3 +207,15 @@ footer p { text-align:center; }
   border-radius: inherit;
   transition: width 0.08s linear;
 }
+.progress-line {
+  position: relative;
+  overflow: hidden;
+}
+
+.progress-line > span {
+  display: block;
+  width: 0%;
+  height: 100%;
+  background: linear-gradient(90deg, #cda76a, #f3dfaa);
+  transition: width 0.08s linear;
+}
