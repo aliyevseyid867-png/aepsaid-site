@@ -162,3 +162,15 @@ footer p { text-align:center; }
 .music-progress{width:min(500px,90%);display:flex;align-items:center;gap:12px;border:1px solid #d3bda42e;border-radius:30px;padding:8px 12px;background:#180c0e70;color:#d4c0b5;margin-bottom:24px;backdrop-filter:blur(8px)}.track-label,.track-time{font-size:8px;letter-spacing:.06em;white-space:nowrap}.track-label b{display:inline-block;width:5px;height:5px;border-radius:50%;background:#d6b06b;margin-right:5px;vertical-align:middle}.progress-line{height:1px;flex:1;background:#bca58f66;position:relative;display:flex;justify-content:space-between;align-items:center}.progress-line span{width:7px;height:7px;border-radius:50%;background:#d9c9aa;box-shadow:0 0 7px #d9c9aa77}.progress-line i{width:6px;height:6px;border-radius:50%;background:#c8b6a9}
 .hero .hero-actions{gap:23px}.hero .button{box-shadow:0 5px 22px #c4a16b18}.hero .button-gold{background:linear-gradient(110deg,#e4ca8a,#ad874b)}.hero .button-gold:hover{box-shadow:0 0 28px #d5b16b45}.hero .text-link{transition:color .25s,letter-spacing .25s}.hero .text-link:hover{color:#fff0bc;letter-spacing:.19em}.hero .scroll-note{bottom:20px}.button:active{transform:scale(.96)}
 @media(max-width:650px){.hero{min-height:780px;height:auto;padding:92px 18px 65px}.hero-topline{top:15px;left:14px;right:14px;align-items:flex-start}.social-pills{max-width:72%;gap:5px}.social-pills a{font-size:7px;padding:6px 8px}.hero-role{max-width:90px;white-space:normal;text-align:right;font-size:7px;line-height:1.6}.hero::before{width:108vw;top:43%}.hero::after{width:90vw;top:43%}.hero-ghost{font-size:75vw;top:17%}.hero .portrait-wrap{margin-top:15px}.hero h1{font-size:clamp(61px,15vw,92px)}.hero .intro{font-size:12px;max-width:330px}.desktop-break{display:none}.hero .stats{gap:15px}.hero .stats strong{font-size:26px}.hero .stats div span{font-size:6px;letter-spacing:.12em}.music-progress{width:100%;gap:7px;padding:8px 10px}.track-label,.track-time{font-size:7px}}
+.hero {
+  background-image:
+    linear-gradient(
+      rgba(25, 11, 14, 0.45),
+      rgba(25, 11, 14, 0.65)
+    ),
+    url("/background.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
